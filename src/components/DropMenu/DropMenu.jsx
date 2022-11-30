@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const DropMenu = () => {
   return (
-    <div>DropMenu</div>
-  )
-}
+    <div className="p-20">
+      DropMenu
+    </div>
+  );
+};
 
-export default DropMenu
+export default DropMenu;
