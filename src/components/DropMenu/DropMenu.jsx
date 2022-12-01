@@ -1,10 +1,10 @@
-import React from "react";
+import {Text} from "@chakra-ui/react"
 
 const DropMenu = () => {
   return (
-    <div className="p-20">
+    <Text className="p-20">
       DropMenu
-    </div>
+    </Text>
   );
 };
 

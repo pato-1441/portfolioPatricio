@@ -1,15 +1,15 @@
-import React from "react";
+import {Box,Text} from "@chakra-ui/react"
 
 const MainText = () => {
   return (
-    <div className="p-20 tracking-wider">
+    <Box p={20}>
       <h1 className="text-6xl">
         Patricio
         <br />
         Albornoz
       </h1>
-      <h2 className="text-2xl mt-4">fullstack web developer</h2>
-    </div>
+      <Text mt={2} fontSize={24}>fullstack web developer</Text>
+    </Box>
   );
 };
 
