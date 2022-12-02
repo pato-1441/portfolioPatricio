@@ -2,7 +2,7 @@ import {Box,Text} from "@chakra-ui/react"
 
 const MainText = () => {
   return (
-    <Box p={20}>
+    <Box mt={20}>
       <h1 className="text-6xl">
         Patricio
         <br />
@@ -14,3 +14,4 @@ const MainText = () => {
 };
 
 export default MainText;
+3333333333
