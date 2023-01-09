@@ -8,7 +8,7 @@ const MainText = () => {
         <br />
         Albornoz
       </h1>
-      <Text mt={2} fontSize={22} width={96}>
+      <Text mt={6} fontSize={22} width={96}>
         <ul>
           <li>
             Web developer, trained in technologies such as Javascript, React,
