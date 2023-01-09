@@ -14,4 +14,3 @@ const MainText = () => {
 };
 
 export default MainText;
-3333333333
