@@ -3,7 +3,7 @@ import { Box, Button, Card, CardBody, CardFooter, Heading, Image, Stack, Text } 
 const Projects = () => {
   return (
     <Box>
-      <h1 className="text-5xl">Projects</h1>
+      <h1 className="text-4xl">Projects</h1>
       <Box fontSize={22} width={96}>
         
       </Box>
