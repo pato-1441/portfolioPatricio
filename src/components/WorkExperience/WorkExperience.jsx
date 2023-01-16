@@ -8,7 +8,7 @@ const WorkExperience = () => {
         Work <br /> Experience
       </h1>
       <Box mt={6} fontSize={22} width={96}>
-        <Text fontSize={26} fontWeight="semibold">
+        <Text fontSize={26}>
           Project Manager
         </Text>
         <Text fontSize={24}>Nebitel</Text>

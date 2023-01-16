@@ -6,7 +6,6 @@ import {
   CardBody,
   CardFooter,
   CardHeader,
-  Heading,
   SimpleGrid,
   Image,
 } from "@chakra-ui/react";
@@ -22,7 +21,7 @@ const Projects = () => {
       >
         <Card color="white" bgColor="red.700">
           <CardHeader>
-            <Heading size="md"> Customer dashboard</Heading>
+            <Text fontSize={22}> Customer dashboard</Text>
           </CardHeader>
           <Image
             objectFit="cover"
