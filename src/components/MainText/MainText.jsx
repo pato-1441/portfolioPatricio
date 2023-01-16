@@ -3,7 +3,7 @@ import { Box, Text } from "@chakra-ui/react";
 const MainText = () => {
   return (
     <Box>
-      <h1 className="text-4xl">
+      <h1 className="text-8xl">
         Patricio
         <br />
         Albornoz
