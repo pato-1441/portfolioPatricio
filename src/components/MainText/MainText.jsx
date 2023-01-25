@@ -3,12 +3,12 @@ import { Box, Text } from "@chakra-ui/react";
 const MainText = () => {
   return (
     <Box>
-      <h1 className="text-8xl">
+      <h1 className="text-6xl">
         Patricio
         <br />
         Albornoz
       </h1>
-      <Text mt={6} fontSize={22} width={96}>
+      <Text className="text-2xl w-1/2" mt={6}>
         <ul>
           <li>
             Web developer, trained in technologies such as Javascript, React,

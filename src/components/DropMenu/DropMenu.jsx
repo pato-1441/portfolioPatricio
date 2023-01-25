@@ -14,7 +14,7 @@ const DropMenu = () => {
 
   return (
     <>
-      <Button colorScheme="blue" onClick={onOpen}>
+      <Button colorScheme="blue" onClick={onOpen} sx={{px:6}}>
         Contact me
       </Button>
       <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
