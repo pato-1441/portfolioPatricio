@@ -1,14 +1,18 @@
 import { Box, Text } from "@chakra-ui/react";
+import DropMenu from "../DropMenu/DropMenu.jsx";
 
 const MainText = () => {
   return (
-    <Box>
-      <h1 className="text-6xl">
-        Patricio
-        <br />
-        Albornoz
-      </h1>
-      <Text className="text-2xl w-1/2" mt={6}>
+    <Box className="px-6">
+      <div className="flex justify-between">
+        <h1 className="text-4xl sm:text-6xl">
+          Patricio
+          <br />
+          Albornoz
+        </h1>
+        <DropMenu />
+      </div>
+      <Text className="text-lg sm:text-2xl sm:w-1/2" mt={6}>
         <ul>
           <li>
             Web developer, trained in technologies such as Javascript, React,
