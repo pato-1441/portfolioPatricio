@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import MeshImageOne from "../../assets/mesh-151.png";
+import MeshImageTwo from "../../assets/mesh-152.png";
 
-const MeshGradientOne = () => {
+const MeshGradientTwo = () => {
   return (
     <motion.img
       initial={{ opacity: 0.6 }}
@@ -12,11 +12,11 @@ const MeshGradientOne = () => {
         transition: { duration: 0.3 },
       }}
       whileTap={{ scale: 0.9 }}
-      src={MeshImageOne}
+      src={MeshImageTwo}
       alt="Blueish Mesh Gradient"
-      className="w-1/2 h-2/4 rounded-l-full"
+      className="w-1/2 h-2/4 rounded-tl-full"
     />
   );
 };
 
-export default MeshGradientOne;
+export default MeshGradientTwo;

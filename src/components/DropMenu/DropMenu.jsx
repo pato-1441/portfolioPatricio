@@ -7,20 +7,23 @@ import {
   DrawerOverlay,
   useDisclosure,
 } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
 const DropMenu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const placement = "right";
 
   return (
-    <>
-      <Button
-        colorScheme="gray"
+    <div>
+      <motion.button
         onClick={onOpen}
-        sx={{ px: 4, color: "black" }}
+        whileHover={{
+          scale: 1.1,
+        }}
+        className="px-4 py-2 bg-white text-black rounded-full"
       >
         Contact me
-      </Button>
+      </motion.button>
       <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
@@ -64,7 +67,7 @@ const DropMenu = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-    </>
+    </div>
   );
 };
 
