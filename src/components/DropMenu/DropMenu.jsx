@@ -14,13 +14,19 @@ const DropMenu = () => {
 
   return (
     <>
-      <Button colorScheme="gray" onClick={onOpen} sx={{px:6, color:'black'}}>
+      <Button
+        colorScheme="gray"
+        onClick={onOpen}
+        sx={{ px: 4, color: "black" }}
+      >
         Contact me
       </Button>
       <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth="1px" fontSize={24}>Contact Info</DrawerHeader>
+          <DrawerHeader borderBottomWidth="1px" fontSize={24}>
+            Contact Info
+          </DrawerHeader>
           <DrawerBody className="flex flex-col gap-5">
             <div>
               <p className="text-xl">LinkedIn</p>

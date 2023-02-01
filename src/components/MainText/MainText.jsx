@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import DropMenu from "../DropMenu/DropMenu.jsx";
 
 const MainText = () => {
@@ -12,7 +12,7 @@ const MainText = () => {
         </h1>
         <DropMenu />
       </div>
-      <Text className="text-lg sm:text-2xl sm:w-1/2" mt={6}>
+      <Box className="text-lg sm:text-2xl sm:w-1/2" mt={6}>
         <ul>
           <li>
             Web developer, trained in technologies such as Javascript, React,
@@ -28,7 +28,7 @@ const MainText = () => {
         Studying a Systems University Degree at the National Technological
         University (UTN) and currently forming me as Backend Developer at
         Coderhouse.
-      </Text>
+      </Box>
     </Box>
   );
 };
