@@ -1,5 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import DropMenu from "../DropMenu/DropMenu.jsx";
+import MeshImage from "../../assets/mesh-151.png";
 
 const MainText = () => {
   return (
@@ -12,22 +13,24 @@ const MainText = () => {
         </h1>
         <DropMenu />
       </div>
-      <Box className="text-lg sm:text-2xl sm:w-1/2" mt={6}>
-        <ul>
-          <li>
+      <Box className="text-lg sm:text-2xl flex justify-between" mt={6}>
+        <div className="w-1/3">
+          <p>
             Web developer, trained in technologies such as Javascript, React,
-            Express, Mongo, Git, among others.
-          </li>
-          <li>Constant desire to learn.</li>
-          <li>Good use of organization, time and communication.</li>
-          <li>
-            Looking for new challenges that allow me to develop new solutions.
-          </li>
-        </ul>
-        <br />
-        Studying a Systems University Degree at the National Technological
-        University (UTN) and currently forming me as Backend Developer at
-        Coderhouse.
+            Express, Mongo, Git, among others. Constant desire to learn. Good
+            use of organization, time and communication. Looking for new
+            challenges that allow me to develop new solutions.
+          </p>
+          <br />
+          <p>
+            Studying a Systems University Degree at the National Technological
+            University (UTN) and currently forming me as Backend Developer at
+            Coderhouse.
+          </p>
+        </div>
+        <div>
+          <img src={MeshImage} alt="Blueish Mesh Gradient" />
+        </div>
       </Box>
     </Box>
   );
