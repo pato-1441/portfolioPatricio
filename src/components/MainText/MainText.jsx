@@ -32,8 +32,6 @@ const MainText = () => {
         <div className="w-1/2 flex gap-6 m-16">
           <MeshGradientOne />
           <MeshGradientTwo />
-          {/* <img src={MeshImageOne} alt="Blueish Mesh Gradient" className="w-1/2 h-2/4 rounded-l-full opacity-50 hover:opacity-100"/> */}
-          {/* <img src={MeshImageTwo} alt="Blueish Mesh Gradient" className="w-1/2 h-2/4 rounded-bl-full opacity-50 hover:opacity-100"/> */}
         </div>
       </Box>
     </Box>

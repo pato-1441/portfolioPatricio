@@ -20,7 +20,13 @@ const DropMenu = () => {
         whileHover={{
           scale: 1.1,
         }}
-        className="px-4 py-2 bg-white text-black rounded-full"
+        transition={{
+          duration: 1,
+        }}
+        whileInView={{
+          boxShadow: "0px 0px 16px rgb(155,155,155)",
+        }}
+        className="px-4 py-2 bg-white text-black hover:text-white hover:bg-black transition-colors duration-1000 rounded-full"
       >
         Contact me
       </motion.button>
