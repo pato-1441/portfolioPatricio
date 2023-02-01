@@ -14,8 +14,8 @@ const MainText = () => {
         </h1>
         <DropMenu />
       </div>
-      <Box className="text-lg sm:text-2xl flex justify-between" mt={6}>
-        <div className="w-1/3">
+      <Box className="text-lg sm:text-2xl flex flex-col sm:flex-row justify-between" mt={6}>
+        <div className="sm:w-1/3">
           <p>
             Web developer, trained in technologies such as Javascript, React,
             Express, Mongo, Git, among others. Constant desire to learn. Good
@@ -29,7 +29,7 @@ const MainText = () => {
             Coderhouse.
           </p>
         </div>
-        <div className="w-1/2 flex gap-6">
+        <div className="w-1/2 flex gap-6 m-16">
           <MeshGradientOne />
           <MeshGradientTwo />
           {/* <img src={MeshImageOne} alt="Blueish Mesh Gradient" className="w-1/2 h-2/4 rounded-l-full opacity-50 hover:opacity-100"/> */}

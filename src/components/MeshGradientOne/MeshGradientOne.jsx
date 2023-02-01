@@ -11,7 +11,7 @@ const MeshGradientOne = () => {
         repeat: Infinity,
         repeatType: "mirror",
         type: "spring",
-        duration: 2,
+        duration: 3,
       }}
       whileHover={{
         opacity: 1,

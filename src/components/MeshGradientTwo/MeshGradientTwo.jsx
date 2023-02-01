@@ -11,7 +11,7 @@ const MeshGradientTwo = () => {
         repeat: Infinity,
         repeatType: "mirror",
         type: "spring",
-        duration: 2,
+        duration: 4,
       }}
       whileHover={{
         opacity: 1,
@@ -20,7 +20,7 @@ const MeshGradientTwo = () => {
       whileTap={{ scale: 0.9 }}
       src={MeshImageTwo}
       alt="Blueish Mesh Gradient"
-      className="w-1/4 h-2/4 rounded-tr-full"
+      className="w-1/3 h-2/4 rounded-tr-full"
     />
   );
 };
