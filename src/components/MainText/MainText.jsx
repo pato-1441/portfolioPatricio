@@ -2,6 +2,7 @@ import { Box } from "@chakra-ui/react";
 import DropMenu from "../DropMenu/DropMenu.jsx";
 import MeshImageOne from "../../assets/mesh-151.png";
 import MeshImageTwo from "../../assets/mesh-152.png";
+import MeshGradientOne from "../MeshGradientOne/MeshGradientOne.jsx";
 
 const MainText = () => {
   return (
@@ -30,8 +31,9 @@ const MainText = () => {
           </p>
         </div>
         <div className="w-1/2 flex gap-4">
-          <img src={MeshImageOne} alt="Blueish Mesh Gradient" className="w-1/2 h-2/4 rounded-l-full opacity-50 hover:opacity-100"/>
-          <img src={MeshImageTwo} alt="Blueish Mesh Gradient" className="w-1/2 h-2/4 rounded-bl-full opacity-50 hover:opacity-100"/>
+          <MeshGradientOne />
+          {/* <img src={MeshImageOne} alt="Blueish Mesh Gradient" className="w-1/2 h-2/4 rounded-l-full opacity-50 hover:opacity-100"/> */}
+          {/* <img src={MeshImageTwo} alt="Blueish Mesh Gradient" className="w-1/2 h-2/4 rounded-bl-full opacity-50 hover:opacity-100"/> */}
         </div>
       </Box>
     </Box>
