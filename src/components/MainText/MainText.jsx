@@ -29,7 +29,7 @@ const MainText = () => {
             Coderhouse.
           </p>
         </div>
-        <div className="w-1/2 flex gap-4">
+        <div className="w-1/2 flex gap-6">
           <MeshGradientOne />
           <MeshGradientTwo />
           {/* <img src={MeshImageOne} alt="Blueish Mesh Gradient" className="w-1/2 h-2/4 rounded-l-full opacity-50 hover:opacity-100"/> */}

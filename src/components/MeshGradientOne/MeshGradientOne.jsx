@@ -6,10 +6,16 @@ const MeshGradientOne = () => {
   return (
     <motion.img
       initial={{ opacity: 0.6 }}
+      animate={{ x: [-2, 2, -2], y: [-5, 5, -5] }}
+      transition={{
+        repeat: Infinity,
+        repeatType: "mirror",
+        type: "spring",
+        duration: 2,
+      }}
       whileHover={{
         opacity: 1,
         scale: 1.1,
-        transition: { duration: 0.3 },
       }}
       whileTap={{ scale: 0.9 }}
       src={MeshImageOne}
