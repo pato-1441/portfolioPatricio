@@ -20,7 +20,7 @@ const MeshGradientOne = () => {
       whileTap={{ scale: 0.9 }}
       src={MeshImageOne}
       alt="Blueish Mesh Gradient"
-      className="w-1/2 h-2/4 rounded-l-full"
+      className="w-1/2 rounded-l-full"
     />
   );
 };

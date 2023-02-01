@@ -19,7 +19,7 @@ const MainText = () => {
         className="text-lg sm:text-2xl grid grid-cols-1 sm:grid-cols-2"
         mt={6}
       >
-        <div className="sm:w-3/4">
+        <div className="sm:w-3/4 col-span-2 sm:col-span-1 sm:h-96">
           <p>
             Web developer, trained in technologies such as Javascript, React,
             Express, Mongo, Git, among others. Constant desire to learn. Good
@@ -33,11 +33,13 @@ const MainText = () => {
             Coderhouse.
           </p>
         </div>
-        <div className="flex gap-6 m-16">
+        <div className="flex gap-6 h-32 sm:h-96">
           <MeshGradientOne />
           <MeshGradientTwo />
         </div>
-        <DownArrow />
+        <div className="col-span-2 flex justify-center">
+          <DownArrow />
+        </div>
       </Box>
     </Box>
   );
