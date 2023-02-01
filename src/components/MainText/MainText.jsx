@@ -33,11 +33,11 @@ const MainText = () => {
             Coderhouse.
           </p>
         </div>
-        <div className="flex gap-6 h-32 sm:h-96 mt-12 sm:mt-0">
+        <div className="flex gap-6 h-32 sm:h-96 my-12 sm:mt-0">
           <MeshGradientOne />
           <MeshGradientTwo />
         </div>
-        <div className="col-span-2 flex justify-center">
+        <div className="col-span-2 flex justify-center h-24 sm:h-48 items-center">
           <DownArrow />
         </div>
       </Box>

@@ -3,7 +3,18 @@ import { motion } from "framer-motion";
 
 const DownArrow = () => {
   return (
-    <motion.svg className="w-16 h-16">
+    <motion.svg
+      className="w-16 h-16 sm:w-20 sm:h-20"
+      initial={{ opacity: 1 }}
+      animate={{ y: [-5, 5, -5] }}
+      transition={{
+        repeat: Infinity,
+        repeatType: "mirror",
+        type: "spring",
+        duration: 3,
+      }}
+      whileTap={{ scale: 0.9 }}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
