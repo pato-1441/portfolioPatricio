@@ -81,7 +81,7 @@ const ProjectsCard = () => {
               <AccordionPanel py={4}>
                 <motion.div className="h-fit w-full flex justify-between gap-4">
                   <motion.div
-                    className="bg-cover opacity-20 hover:opacity-100 rounded-xl w-1/2"
+                    className="bg-cover bg-center sm:bg-top opacity-20 hover:opacity-100 rounded-xl w-1/2"
                     style={{
                       backgroundImage: `url(${e.image})`,
                     }}
@@ -89,14 +89,14 @@ const ProjectsCard = () => {
                     <p className="h-48">a</p>
                   </motion.div>
                   <div className="text-md flex flex-col w-1/2">
-                    <div className="flex">
+                    <div className="flex sm:h-1/2">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Magnam quisquam excepturi hic ut eos fugiat reiciendis
                       eaque laborum voluptates nisi.
                     </div>
                     <div className="flex gap-2 sm:gap-4 justify-between items-center">
                       <a
-                        className="w-1/2 text-center mt-4 rounded-xl py-4 hover:bg-gray-500 transition-all duration-700"
+                        className="w-1/2 text-center rounded-xl py-4 hover:bg-gray-500 transition-all duration-700"
                         href={e.link}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -104,7 +104,7 @@ const ProjectsCard = () => {
                         <i className="fa-brands fa-github fa-xl"></i>
                       </a>
                       <a
-                        className="w-1/2 text-center mt-4 rounded-xl py-4 hover:bg-slate-900 transition-all duration-700"
+                        className="w-1/2 text-center rounded-xl py-4 hover:bg-slate-900 transition-all duration-700"
                         href={e.link}
                         target="_blank"
                         rel="noopener noreferrer"
