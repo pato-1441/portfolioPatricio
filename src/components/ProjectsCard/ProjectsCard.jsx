@@ -60,9 +60,11 @@ const ProjectsCard = () => {
       <motion.div className="my-5 rounded-xl">
         <Accordion defaultIndex={[0]} allowMultiple>
           {myProjects.map((e) => (
-            <AccordionItem key={e.id}>
+            <AccordionItem key={e.id} sx={{ border: "none", marginY: "18px" }}>
               <h2>
-                <AccordionButton>
+                <AccordionButton
+                  sx={{ borderRadius: "50px", border: "1px solid white" }}
+                >
                   <Box as="span" flex="1" textAlign="left" fontSize={24}>
                     {e.name}
                   </Box>
