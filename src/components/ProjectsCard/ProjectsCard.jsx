@@ -16,17 +16,20 @@ const ProjectsCard = () => {
     <motion.div
       initial={false}
       animate={isOpen ? "open" : "closed"}
-      className="my-5"
+      className="my-5 rounded-xl"
     >
       <motion.button
-        className="text-xl flex w-full justify-between"
+        className="text-xl flex items-center w-full justify-between border border-dashed hover:border-solid rounded-xl px-6 py-2"
         whileTap={{ scale: 0.97 }}
         onClick={() => setIsOpen(!isOpen)}
+        whileHover={{
+          boxShadow: "0px 0px 16px rgb(155,155,155)",
+        }}
       >
         Menu
         <motion.div
           variants={{
-            open: { rotate: 180 },
+            open: { rotate: 180, y: -2 },
             closed: { rotate: 0 },
           }}
           transition={{ duration: 0.2 }}
@@ -71,11 +74,9 @@ const ProjectsCard = () => {
         }}
         style={{ pointerEvents: isOpen ? "auto" : "none" }}
       >
-        <motion.li variants={itemVariants}>Item 1 </motion.li>
-        <motion.li variants={itemVariants}>Item 2 </motion.li>
-        <motion.li variants={itemVariants}>Item 3 </motion.li>
-        <motion.li variants={itemVariants}>Item 4 </motion.li>
-        <motion.li variants={itemVariants}>Item 5 </motion.li>
+        <motion.li className="my-3 text-lg" variants={itemVariants}>
+          Item 1
+        </motion.li>
       </motion.ul>
     </motion.div>
   );
