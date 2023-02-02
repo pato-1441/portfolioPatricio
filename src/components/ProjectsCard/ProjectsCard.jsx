@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const ProjectsCard = () => {
+const ProjectsCard = ({name, image, link}) => {
   const itemVariants = {
     open: {
       opacity: 1,
@@ -26,7 +26,7 @@ const ProjectsCard = () => {
           boxShadow: "0px 0px 16px rgb(155,155,155)",
         }}
       >
-        Menu
+        {name}
         <motion.div
           variants={{
             open: { rotate: 180, y: -2 },
@@ -80,14 +80,11 @@ const ProjectsCard = () => {
               className="bg-cover opacity-25"
               style={{
                 backgroundImage:
-                  "url(https://user-images.githubusercontent.com/83987715/199247186-d0b2b54e-8275-4208-b85c-0aa3cb64dc96.jpeg)",
+                  `url(${image})`,
               }}
             >
-              <p>a</p>
-              <p>a</p>
-              <p>a</p>
-              <p>a</p>
-              <p>a</p>
+              <p className="h-48"></p>
+              
             </motion.div>
           </motion.div>
         </motion.li>
