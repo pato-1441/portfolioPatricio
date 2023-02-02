@@ -84,17 +84,17 @@ const ProjectsCard = ({ name, image, link }) => {
             >
               <p className="h-48"></p>
             </motion.div>
-            <div className="text-md w-full flex flex-col sm:flex-row justify-between gap-2">
+            <div className="text-md w-full flex flex-col sm:flex-row justify-between sm:gap-2">
               <a
-                className="sm:w-1/2 text-center mt-4 py-1 rounded-xl border hover:bg-gray-400 transition-all duration-700"
+                className="sm:w-1/2 text-center mt-4 py-2 rounded-xl border hover:bg-gray-500 transition-all duration-700"
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github fa-xl"></i>
               </a>
               <a
-                className="sm:w-1/2 text-center mt-4 py-1 rounded-xl border"
+                className="sm:w-1/2 text-center mt-4 py-2 rounded-xl border hover:bg-cyan-900 transition-all duration-700"
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
