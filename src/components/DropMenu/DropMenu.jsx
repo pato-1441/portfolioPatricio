@@ -5,6 +5,7 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
+  DrawerCloseButton,
   useDisclosure,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
@@ -33,9 +34,10 @@ const DropMenu = () => {
       <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
+          <DrawerCloseButton />
           <DrawerHeader borderBottomWidth="1px" fontSize={24}>
             Contact Info
-          </DrawerHeader>
+          </DrawerHeader>            
           <DrawerBody className="flex flex-col gap-5">
             <div>
               <p className="text-xl">LinkedIn</p>
