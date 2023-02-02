@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const ProjectsCard = ({name, image, link}) => {
+const ProjectsCard = ({ name, image, link }) => {
   const itemVariants = {
     open: {
       opacity: 1,
@@ -77,15 +77,31 @@ const ProjectsCard = ({name, image, link}) => {
         <motion.li className="my-3 text-lg" variants={itemVariants}>
           <motion.div className="h-fit">
             <motion.div
-              className="bg-cover opacity-25"
+              className="bg-cover bg-center opacity-20 hover:opacity-100 rounded-b-xl"
               style={{
-                backgroundImage:
-                  `url(${image})`,
+                backgroundImage: `url(${image})`,
               }}
             >
               <p className="h-48"></p>
-              
             </motion.div>
+            <div className="text-md w-full flex flex-col sm:flex-row justify-between gap-2">
+              <a
+                className="sm:w-1/2 text-center mt-4 py-1 rounded-xl border hover:bg-gray-400 transition-all duration-700"
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                className="sm:w-1/2 text-center mt-4 py-1 rounded-xl border"
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Deploy
+              </a>
+            </div>
           </motion.div>
         </motion.li>
       </motion.ul>

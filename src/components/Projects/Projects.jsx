@@ -32,7 +32,7 @@ const Projects = () => {
   return (
     <Box className="flex flex-col px-6">
       <h1 className="text-4xl">Projects</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-10 mt-6">
         {myProjects.map((e) => (
           <ProjectsCard name={e.name} image={e.image} link={e.link} />
         ))}
