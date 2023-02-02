@@ -75,7 +75,21 @@ const ProjectsCard = () => {
         style={{ pointerEvents: isOpen ? "auto" : "none" }}
       >
         <motion.li className="my-3 text-lg" variants={itemVariants}>
-          Item 1
+          <motion.div className="h-fit">
+            <motion.div
+              className="bg-cover opacity-25"
+              style={{
+                backgroundImage:
+                  "url(https://user-images.githubusercontent.com/83987715/199247186-d0b2b54e-8275-4208-b85c-0aa3cb64dc96.jpeg)",
+              }}
+            >
+              <p>a</p>
+              <p>a</p>
+              <p>a</p>
+              <p>a</p>
+              <p>a</p>
+            </motion.div>
+          </motion.div>
         </motion.li>
       </motion.ul>
     </motion.div>
