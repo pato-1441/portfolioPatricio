@@ -1,15 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const ProjectsCard = () => {
   return (
-    <div className="flex flex-col col-span-1">
-      <div>ProjectsCard</div>
-      <div>
+    <motion.div className="flex flex-col col-span-1">
+      {/* <div>ProjectsCard</div> */}
+      {/* <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
         sequi dolorum labore tenetur voluptas error, animi nobis sint
         repudiandae doloremque.
-      </div>
-    </div>
+      </div> */}
+    </motion.div>
   );
 };
 
