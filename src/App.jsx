@@ -7,7 +7,7 @@ const App = () => {
       <div className="container mx-auto flex flex-col justify-between pt-10 sm:pt-20 min-h-screen">
         <MainText />
       </div>
-      <div className="container mx-auto flex justify-between pt-10 sm:pt-20 min-h-screen">
+      <div className="container mx-auto flex flex-col justify-between pt-10 sm:pt-20 min-h-screen">
         <Projects />
       </div>
     </div>

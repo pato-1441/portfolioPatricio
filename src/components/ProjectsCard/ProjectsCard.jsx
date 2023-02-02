@@ -16,7 +16,7 @@ const ProjectsCard = () => {
     <motion.div
       initial={false}
       animate={isOpen ? "open" : "closed"}
-      className="menu"
+      className="my-5"
     >
       <motion.button
         className="text-xl flex w-full justify-between"
