@@ -87,7 +87,7 @@ const ProjectsCard = () => {
               <AccordionPanel py={4}>
                 <motion.div className="h-fit w-full flex justify-between gap-4">
                   <motion.div
-                    className="bg-cover bg-center sm:bg-top opacity-100 rounded-xl w-1/2"
+                    className="bg-cover bg-center sm:bg-top opacity-100 hover:opacity-90 rounded-xl w-1/2"
                     style={{
                       backgroundImage: `url(${e.image})`,
                     }}
