@@ -17,6 +17,7 @@ const myProjects = [
       "https://user-images.githubusercontent.com/83987715/199247186-d0b2b54e-8275-4208-b85c-0aa3cb64dc96.jpeg",
     link: "https://github.com/pato-1441/bornozBank",
     deploy: "https://bornozbank.netlify.app/index.html",
+    info: "Bornoz Bank is a project I made with Vanilla Javascript, which simulates something close to a Homebanking.",
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ const myProjects = [
       "https://user-images.githubusercontent.com/83987715/200133740-f27eee0c-ca5b-4518-8966-8a9943be813a.jpeg",
     link: "https://github.com/pato-1441/bornozShows",
     deploy: "https://bornozshows.netlify.app/",
+    info: "Bornoz Shows is a SPA made with React in which you can access to buy tickets for different shows, filtering by categories, checking availability by stock and generating instant purchase order.",
   },
   {
     id: 3,
@@ -33,6 +35,7 @@ const myProjects = [
       "https://raw.githubusercontent.com/pato-1441/bornozFly/main/public/image-6.png",
     link: "https://github.com/pato-1441/bornozFly",
     deploy: "https://bornozfly.up.railway.app/",
+    info: "Bornoz Fly is a project made in Node.Js and Express, in which we can browse offers, search for tickets and buy flights.",
   },
   {
     id: 4,
@@ -41,6 +44,7 @@ const myProjects = [
       "https://i.annihil.us/u/prod/marvel/images/OpenGraph-TW-1200x630.jpg",
     link: "https://github.com/TimoteoGambella/Marvel-Project-Vercel",
     deploy: "https://marvel-project-iota.vercel.app/",
+    info: "A SPA made with React, that allow us to search information about the Marvel world.",
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ const myProjects = [
       "https://user-images.githubusercontent.com/83987715/216335172-9f0f296d-b2e9-4f12-b55f-cde59b35ef4f.png",
     link: "https://github.com/pato-1441/searchSynonyms",
     deploy: "https://searchsynonyms.netlify.app/",
+    info: "An app developed on React + TypeScript that help us to find synonyms by an input word, the results come from Datamuse API.",
   },
   {
     id: 6,
@@ -57,6 +62,7 @@ const myProjects = [
       "https://user-images.githubusercontent.com/83987715/199248672-33f77843-bc2b-4ff1-8c10-7854e57df06d.png",
     link: "https://github.com/pato-1441/portfolio",
     deploy: "https://patricioalbornozold.netlify.app/",
+    info: "In this repository you can find all the HTML, SASS and site assets files that together form the final product of the old Patricio Albornoz's Portfolio.",
   },
 ];
 
