@@ -70,7 +70,7 @@ const ProjectsCard = () => {
   return (
     <div>
       <motion.div className="my-5 rounded-xl">
-        <Accordion defaultIndex={[0]} allowMultiple>
+        <Accordion defaultIndex={[0]}>
           {myProjects.map((e) => (
             <AccordionItem key={e.id} sx={{ border: "none", marginY: "18px" }}>
               <h2>
@@ -87,7 +87,7 @@ const ProjectsCard = () => {
               <AccordionPanel py={4}>
                 <motion.div className="h-fit w-full flex justify-between gap-4">
                   <motion.div
-                    className="bg-cover bg-center sm:bg-top opacity-20 hover:opacity-100 rounded-xl w-1/2"
+                    className="bg-cover bg-center sm:bg-top opacity-100 rounded-xl w-1/2"
                     style={{
                       backgroundImage: `url(${e.image})`,
                     }}
@@ -96,9 +96,7 @@ const ProjectsCard = () => {
                   </motion.div>
                   <div className="text-md flex flex-col w-1/2">
                     <div className="flex sm:h-1/2">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Magnam quisquam excepturi hic ut eos fugiat reiciendis
-                      eaque laborum voluptates nisi.
+                      {e.info}
                     </div>
                     <div className="flex gap-2 sm:gap-4 justify-between items-center">
                       <a
