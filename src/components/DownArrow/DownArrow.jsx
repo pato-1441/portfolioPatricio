@@ -1,9 +1,17 @@
-import React, { Link } from "react";
+import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
 
 const DownArrow = () => {
   return (
-    <a href="#projectsSection">
+    <Link
+      activeClass="active"
+      to="projectsSection"
+      spy={true}
+      smooth={true}
+      duration={500}
+      className="cursor-pointer"
+    >
       <motion.svg
         className="w-16 h-16 sm:w-20 sm:h-20"
         initial={{ opacity: 1 }}
@@ -15,6 +23,7 @@ const DownArrow = () => {
           duration: 3,
         }}
         whileTap={{ scale: 0.9 }}
+        whileHover={{ scale: 1.1 }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +40,7 @@ const DownArrow = () => {
           />
         </svg>
       </motion.svg>
-    </a>
+    </Link>
   );
 };
 
