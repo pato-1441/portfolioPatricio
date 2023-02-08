@@ -5,24 +5,32 @@ import {
   FormControl,
   FormLabel,
   Input,
-  Textarea,
+  useToast,
+  Wrap,
+  WrapItem,
 } from "@chakra-ui/react";
 import emailjs from "emailjs-com";
 
 const ContactMe = () => {
+  const toast = useToast();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        process.env.EMAILJS_SERVICE_ID,
-        process.env.EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         e.target,
-        process.env.EMAILJS_APIKEY
+        import.meta.env.VITE_EMAILJS_APIKEY
       )
       .then(
         (result) => {
-          window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+          toast({
+            title: "Mail sended",
+            status: "success",
+            isClosable: true,
+          });
         },
         (error) => {
           console.log(error.text);
@@ -32,6 +40,21 @@ const ContactMe = () => {
 
   return (
     <Box className="px-6 text-right">
+      <Wrap>
+        <WrapItem>
+          <Button
+            onClick={() =>
+              toast({
+                title: "Mail sended",
+                status: "success",
+                isClosable: true,
+              })
+            }
+          >
+            Show success toast
+          </Button>
+        </WrapItem>
+      </Wrap>
       <div className="flex justify-end">
         <h1 className="text-4xl sm:text-6xl">
           If you have any proposal
@@ -39,13 +62,13 @@ const ContactMe = () => {
           to offer me, please do so here
         </h1>
       </div>
-      <Box
-        className="text-lg sm:text-2xl flex"
-        mt={6}
-      >
+      <Box className="text-lg sm:text-2xl flex" mt={6}>
         <div className="sm:h-96 w-full">
           <p className="">Complete the fields and send me an email!</p>
-          <form className="contact-form my-6 flex flex-col gap-4" onSubmit={sendEmail}>
+          <form
+            className="contact-form my-6 flex flex-col gap-4"
+            onSubmit={sendEmail}
+          >
             <FormControl isRequired>
               <FormLabel>Name</FormLabel>
               <Input placeholder="Name" name="from_name" />
@@ -60,9 +83,11 @@ const ContactMe = () => {
             </FormControl>
             <FormControl isRequired>
               <FormLabel>Message</FormLabel>
-              <Textarea placeholder="Your message" name="html_message" />
+              <Input placeholder="Your message" name="html_message" />
             </FormControl>
-            <Button type="submit" mt={4}>Send</Button>
+            <Button type="submit" mt={4}>
+              Send
+            </Button>
           </form>
         </div>
       </Box>
