@@ -40,10 +40,10 @@ const ContactMe = () => {
         </h1>
       </div>
       <Box
-        className="text-lg sm:text-2xl flex justify-end"
+        className="text-lg sm:text-2xl flex"
         mt={6}
       >
-        <div className="sm:h-96">
+        <div className="sm:h-96 w-full">
           <p className="">Complete the fields and send me an email!</p>
           <form className="contact-form my-6 flex flex-col gap-4" onSubmit={sendEmail}>
             <FormControl isRequired>
