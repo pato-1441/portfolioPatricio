@@ -1,5 +1,12 @@
 import React from "react";
-import { Box, Button, FormControl, FormLabel, Input } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  FormControl,
+  FormLabel,
+  Input,
+  Textarea,
+} from "@chakra-ui/react";
 import emailjs from "emailjs-com";
 
 const ContactMe = () => {
@@ -24,8 +31,8 @@ const ContactMe = () => {
   };
 
   return (
-    <Box className="px-6">
-      <div className="flex justify-between">
+    <Box className="px-6 text-right">
+      <div className="flex justify-end">
         <h1 className="text-4xl sm:text-6xl">
           If you have any proposal
           <br />
@@ -33,36 +40,29 @@ const ContactMe = () => {
         </h1>
       </div>
       <Box
-        className="text-lg sm:text-2xl grid grid-cols-1 sm:grid-cols-2"
+        className="text-lg sm:text-2xl flex justify-end"
         mt={6}
       >
-        <div className="sm:w-3/4 col-span-2 sm:col-span-1 sm:h-96">
-          <p>
-            Web developer, trained in technologies such as Javascript, React,
-            Express, Mongo, Git, among others. Constant desire to learn. Good
-            use of organization, time and communication. Looking for new
-            challenges that allow me to develop new solutions.
-          </p>
-        </div>
-        <div className="flex gap-6 h-32 sm:h-96 my-12 sm:mt-0">
-          <form className="contact-form" onSubmit={sendEmail}>
+        <div className="sm:h-96">
+          <p className="">Complete the fields and send me an email!</p>
+          <form className="contact-form my-6 flex flex-col gap-4" onSubmit={sendEmail}>
             <FormControl isRequired>
               <FormLabel>Name</FormLabel>
-              <Input placeholder="First name" name="from_name" />
+              <Input placeholder="Name" name="from_name" />
             </FormControl>
             <FormControl isRequired>
               <FormLabel>Email</FormLabel>
-              <Input placeholder="First name" name="from_email" />
+              <Input placeholder="Email" name="from_email" />
             </FormControl>
             <FormControl isRequired>
               <FormLabel>Subject</FormLabel>
-              <Input placeholder="First name" name="subject" />
+              <Input placeholder="Subject" name="subject" />
             </FormControl>
             <FormControl isRequired>
               <FormLabel>Message</FormLabel>
-              <Input placeholder="First name" name="html_message" />
+              <Textarea placeholder="Your message" name="html_message" />
             </FormControl>
-            <Button type="submit">Send</Button>
+            <Button type="submit" mt={4}>Send</Button>
           </form>
         </div>
       </Box>
