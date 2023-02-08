@@ -41,19 +41,7 @@ const ContactMe = () => {
   return (
     <Box className="px-6 text-right">
       <Wrap>
-        <WrapItem>
-          <Button
-            onClick={() =>
-              toast({
-                title: "Mail sended",
-                status: "success",
-                isClosable: true,
-              })
-            }
-          >
-            Show success toast
-          </Button>
-        </WrapItem>
+        <WrapItem></WrapItem>
       </Wrap>
       <div className="flex justify-end">
         <h1 className="text-4xl sm:text-6xl">
@@ -83,7 +71,7 @@ const ContactMe = () => {
             </FormControl>
             <FormControl isRequired>
               <FormLabel>Message</FormLabel>
-              <Input placeholder="Your message" name="html_message" />
+              <Input placeholder="Your message" name="message" />
             </FormControl>
             <Button type="submit" mt={4}>
               Send
