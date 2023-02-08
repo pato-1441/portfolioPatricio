@@ -13,6 +13,7 @@ import emailjs from "emailjs-com";
 
 const ContactMe = () => {
   const toast = useToast();
+  const contactForm = document.getElementById("contactForm");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -26,9 +27,11 @@ const ContactMe = () => {
       )
       .then(
         (result) => {
+          contactForm.reset();
           toast({
             title: "Mail sended",
             status: "success",
+            variant: "left-accent",
             isClosable: true,
           });
         },
@@ -54,6 +57,7 @@ const ContactMe = () => {
         <div className="sm:h-96 w-full">
           <p className="">Complete the fields and send me an mail</p>
           <form
+            id="contactForm"
             className="contact-form my-6 flex flex-col gap-4"
             onSubmit={sendEmail}
           >
