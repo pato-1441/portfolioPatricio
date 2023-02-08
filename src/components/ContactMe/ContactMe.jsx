@@ -7,7 +7,7 @@ const ContactMe = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .sendForm(process.env.EMAILJS_SERVICE_ID, process.env.EMAILJS_TEMPLATE_ID, e.target, process.env.EMAILJS_APIKEY)
       .then(
         (result) => {
           window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
