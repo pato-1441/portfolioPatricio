@@ -92,12 +92,12 @@ const ProjectsCard = () => {
                       backgroundImage: `url(${e.image})`,
                     }}
                   >
-                    <p className="h-48">a</p>
+                    <p className="h-48">
+                      <span className="hidden">a</span>
+                    </p>
                   </motion.div>
                   <div className="text-md flex flex-col w-1/2">
-                    <div className="flex sm:h-1/2">
-                      {e.info}
-                    </div>
+                    <div className="flex sm:h-1/2">{e.info}</div>
                     <div className="flex gap-2 sm:gap-4 justify-between items-center">
                       <a
                         className="w-1/2 text-center rounded-xl py-4 hover:bg-gray-500 transition-all duration-700"

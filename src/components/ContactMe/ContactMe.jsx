@@ -1,7 +1,23 @@
-import { Box } from "@chakra-ui/react";
 import React from "react";
+import { Box } from "@chakra-ui/react";
+import emailjs from "emailjs-com";
 
 const ContactMe = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .then(
+        (result) => {
+          window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <Box className="px-6">
       <div className="flex justify-between">
@@ -22,17 +38,9 @@ const ContactMe = () => {
             use of organization, time and communication. Looking for new
             challenges that allow me to develop new solutions.
           </p>
-          <br />
-          <p>
-            Studying a Systems University Degree at the National Technological
-            University (UTN) and currently forming me as Backend Developer at
-            Coderhouse.
-          </p>
         </div>
-        <div className="flex gap-6 h-32 sm:h-96 my-12 sm:mt-0">
-        </div>
-        <div className="col-span-2 flex justify-center h-24 sm:h-48 items-center">
-        </div>
+        <div className="flex gap-6 h-32 sm:h-96 my-12 sm:mt-0">a</div>
+        <div className="col-span-2 flex justify-center h-24 sm:h-48 items-center">a</div>
       </Box>
     </Box>
   );
