@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, Button, FormControl, FormLabel, Input } from "@chakra-ui/react";
 import emailjs from "emailjs-com";
 
 const ContactMe = () => {
@@ -7,7 +7,12 @@ const ContactMe = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(process.env.EMAILJS_SERVICE_ID, process.env.EMAILJS_TEMPLATE_ID, e.target, process.env.EMAILJS_APIKEY)
+      .sendForm(
+        process.env.EMAILJS_SERVICE_ID,
+        process.env.EMAILJS_TEMPLATE_ID,
+        e.target,
+        process.env.EMAILJS_APIKEY
+      )
       .then(
         (result) => {
           window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
@@ -39,8 +44,27 @@ const ContactMe = () => {
             challenges that allow me to develop new solutions.
           </p>
         </div>
-        <div className="flex gap-6 h-32 sm:h-96 my-12 sm:mt-0">a</div>
-        <div className="col-span-2 flex justify-center h-24 sm:h-48 items-center">a</div>
+        <div className="flex gap-6 h-32 sm:h-96 my-12 sm:mt-0">
+          <form className="contact-form" onSubmit={sendEmail}>
+            <FormControl isRequired>
+              <FormLabel>Name</FormLabel>
+              <Input placeholder="First name" name="from_name" />
+            </FormControl>
+            <FormControl isRequired>
+              <FormLabel>Email</FormLabel>
+              <Input placeholder="First name" name="from_email" />
+            </FormControl>
+            <FormControl isRequired>
+              <FormLabel>Subject</FormLabel>
+              <Input placeholder="First name" name="subject" />
+            </FormControl>
+            <FormControl isRequired>
+              <FormLabel>Message</FormLabel>
+              <Input placeholder="First name" name="html_message" />
+            </FormControl>
+            <Button type="submit">Send</Button>
+          </form>
+        </div>
       </Box>
     </Box>
   );
