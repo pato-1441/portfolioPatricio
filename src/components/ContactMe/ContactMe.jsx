@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Box,
-  Button,
   FormControl,
   FormLabel,
   Input,
@@ -9,6 +8,7 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 
 const ContactMe = () => {
@@ -73,9 +73,21 @@ const ContactMe = () => {
               <FormLabel>Message</FormLabel>
               <Input placeholder="Your message" name="message" />
             </FormControl>
-            <Button type="submit" mt={4}>
+            <motion.button
+              whileHover={{
+                scale: 1.05,
+              }}
+              transition={{
+                duration: 1,
+              }}
+              whileInView={{
+                boxShadow: "0px 0px 8px rgb(155,155,155)",
+              }}
+              className="px-4 py-2 text-lg bg-black text-white hover:text-black hover:bg-white transition-colors duration-1000 rounded-full mt-6"
+              type="submit"
+            >
               Send
-            </Button>
+            </motion.button>
           </form>
         </div>
       </Box>
