@@ -109,7 +109,7 @@ const ProjectsCard = () => {
                       </a>
                       <a
                         className="w-1/2 text-center rounded-xl py-4 hover:bg-slate-900 transition-all duration-700"
-                        href={e.link}
+                        href={e.deploy}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
