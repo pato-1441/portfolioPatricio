@@ -13,10 +13,10 @@ import emailjs from "emailjs-com";
 
 const ContactMe = () => {
   const toast = useToast();
-  const contactForm = document.getElementById("contactForm");
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const contactForm = document.getElementById("contactForm");
 
     emailjs
       .sendForm(
