@@ -44,7 +44,7 @@ const ContactMe = () => {
 
   return (
     <>
-      <motion.div className="sm:w-1/2 flex justify-center items-center">
+      <motion.div className="md:w-1/2 flex justify-center items-center">
         <motion.img
           initial={{ opacity: 1 }}
           animate={{ x: [-2, 2, -2], y: [-5, 5, -5] }}

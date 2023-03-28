@@ -11,7 +11,7 @@ const App = () => {
       <div id="projectsSection" className="container mx-auto flex flex-col justify-between pt-10 sm:pt-20 min-h-screen">
         <Projects />
       </div>
-      <div className="container mx-auto flex flex-col sm:flex-row justify-between pt-10 sm:pt-20 min-h-screen gap-10">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between pt-10 sm:pt-20 min-h-screen gap-10 pb-5">
         <ContactMe />
       </div>
     </div>
