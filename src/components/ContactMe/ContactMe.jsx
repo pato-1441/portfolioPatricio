@@ -67,7 +67,7 @@ const ContactMe = () => {
             to offer me, please do so here
           </h1>
         </div>
-        <Box className="text-lg sm:text-2xl flex" mt={6}>
+        <Box className="text-lg sm:text-2xl flex text-right" mt={6}>
           <div className="sm:h-96 w-full">
             <p className="">Complete the fields and send me an mail</p>
             <form
