@@ -21,7 +21,7 @@ const MainText = () => {
       >
         <div className="sm:w-3/4 col-span-2 sm:col-span-1 sm:h-96">
           <p>
-            Web developer, trained in technologies such as Javascript, React,
+            Web developer, trained in technologies such as C#, .NET, Javascript, React,
             Express, Mongo, Git, among others. Constant desire to learn. Good
             use of organization, time and communication. Looking for new
             challenges that allow me to develop new solutions.
