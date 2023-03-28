@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
-import contactIllustration from "../../assets/contactIllustration.png"
+import contactIllustration from "../../assets/contactIllustration.png";
 
 const ContactMe = () => {
   const toast = useToast();
@@ -44,9 +44,21 @@ const ContactMe = () => {
 
   return (
     <>
-      <Box className="w-1/2 flex justify-center items-center">
-        <img src={contactIllustration} alt="" />
-      </Box>
+      <motion.div className="sm:w-1/2 flex justify-center items-center">
+        <motion.img
+          initial={{ opacity: 1 }}
+          animate={{ x: [-2, 2, -2], y: [-5, 5, -5] }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "mirror",
+            type: "spring",
+            duration: 3,
+          }}
+          whileTap={{ scale: 0.95 }}
+          src={contactIllustration}
+          alt="a happy world illustration"
+        />
+      </motion.div>
       <Box className="px-6">
         <div className="flex justify-end text-right">
           <h1 className="text-4xl sm:text-6xl">
