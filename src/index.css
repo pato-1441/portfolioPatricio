@@ -1,7 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-  font-family: 'Roboto', sans-serif;
+html {
+  scroll-behavior: smooth;
+}
+html ::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  font-family: "Lato", sans-serif;
 }
