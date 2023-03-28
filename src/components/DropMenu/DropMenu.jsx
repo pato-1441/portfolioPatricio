@@ -17,31 +17,52 @@ const DropMenu = () => {
   return (
     <div>
       <div className="flex gap-5 sm:gap-10 justify-between">
-        <motion.button>
+        <motion.button
+          whileHover={{
+            scale: 1.2,
+          }}
+          transition={{
+            duration: 0.5,
+          }}
+        >
           <a
             href="https://www.linkedin.com/in/patoalbornoz/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fa-brands fa-linkedin-in fa-2x"></i>
+            <motion.i className="fa-brands fa-linkedin-in fa-2x"></motion.i>
           </a>
         </motion.button>
-        <motion.button>
+        <motion.button
+          whileHover={{
+            scale: 1.2,
+          }}
+          transition={{
+            duration: 0.5,
+          }}
+        >
           <a
             href="mailto:pwalbornoz@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fa-regular fa-envelope fa-2x"></i>
+            <i className="fa-regular fa-envelope fa-2x"></i>
           </a>
         </motion.button>
-        <motion.button>
+        <motion.button
+          whileHover={{
+            scale: 1.2,
+          }}
+          transition={{
+            duration: 0.5,
+          }}
+        >
           <a
             href="https://github.com/pato-1441"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fa-brands fa-github fa-2x"></i>
+            <i className="fa-brands fa-github fa-2x"></i>
           </a>
         </motion.button>
       </div>
