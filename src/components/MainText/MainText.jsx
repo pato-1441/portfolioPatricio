@@ -21,15 +21,15 @@ const MainText = () => {
       >
         <div className="sm:w-3/4 col-span-2 sm:col-span-1 sm:h-96">
           <p>
-            Web developer, trained in technologies such as C#, .NET, Javascript, React,
-            Express, Mongo, Git, among others. Constant desire to learn. Fan of organization, team management and making socials. Looking for new
-            challenges that allow me to develop new solutions.
+            Web developer, trained in technologies such as C#, .NET, Javascript,
+            React, Express, Mongo, Git, among others. Constant desire to learn.
+            Fan of organization, team management and making socials. Looking for
+            new challenges that allow me to develop new solutions.
           </p>
           <br />
           <p>
-            Studying a Systems University Degree at the National Technological
-            University (UTN) and currently forming me as Backend Developer at
-            Coderhouse.
+            At the moment studying a Systems University Degree at the National
+            Technological University (UTN).
           </p>
         </div>
         <div className="flex gap-6 h-32 sm:h-96 my-12 sm:mt-0">
